@@ -7,33 +7,62 @@ import Demo from "../views/Demo.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  // {
-  //   path: "/",
-  //   component: Demo,
-  //   meta: {
-  //     title: "Trydo || Creative Agency And Multipurpose Template",
-  //   },
-  // },
-
-  // {
-  //   path: "/",
-  //   meta: {
-  //     title: "Personal Portfolio Landing || VueJS Multipurpose Template",
-  //   },
-  //   component: () =>
-  //     import("../views/all-home-version/LandingPersonalPortfolioTwo.vue"),
-  // },
-
   {
     path: "/",
-    name: "LandingPersonalPortfolio",
     meta: {
-      title: " Personal Portfolio Landing || VueJS Multipurpose Template",
+      title: "Personal Portfolio Landing || VueJS Multipurpose Template",
     },
     component: () =>
-      import("../views/all-home-version/LandingPersonalPortfolio.vue"),
+      import("../views/all-home-version/LandingPersonalPortfolioTwo.vue"),
   },
-
+  {
+    path: "/service",
+    name: "Service",
+    meta: {
+      title: "Service || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/service/Service.vue"),
+  },
+  {
+    path: "/service-details",
+    name: "ServiceDetails",
+    meta: {
+      title: "Service Details || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/service/ServiceDetails.vue"),
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    meta: {
+      title: "Blog || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/blog/Blog.vue"),
+  },
+  {
+    path: "/blog-details",
+    name: "BlogDetails",
+    meta: {
+      title: "Blog Details || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/blog/BlogDetails.vue"),
+  },
+  {
+    path: "/portfolio",
+    name: "Portfolio",
+    meta: {
+      title: "Portfolio || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/portfolio/Portfolio.vue"),
+  },
+  {
+    path: "/portfolio-details",
+    name: "PortfolioDetails",
+    meta: {
+      title: "Portfolio Details || VueJS Multipurpose Template",
+    },
+    component: () => import("../views/portfolio/PortfolioDetails.vue"),
+  },
   {
     path: "*",
     component: Missing,
