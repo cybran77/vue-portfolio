@@ -1,6 +1,6 @@
 {
-  "name": "trydo",
-  "version": "1.1.4",
+  "name": "jess-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
